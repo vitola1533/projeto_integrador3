@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="asd.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="java.js"></script>
+    </head>
+    <body  >
+        <div class="columns is-mobile" id="acesso1">
+            <div class="column is-4 is-offset-4">
+                <div class="box">
+                    <article class="media">
+                      <div class="media-left">
+                        <figure class="image is-128x128">
+                          <img src="unknown.png" alt="Image">
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                        <div class="content">
+                          <p>
+                            <strong>Avaliações</strong> 
+                            <br>
+                            Olá administrador. Utilize seu usuário e senha para acessar os dados das avaliações.
+                          </p>
+                        </div>
+                        <nav class="level is-mobile">
+                          <div class="level-left">
+                            <a class="level-item" aria-label="reply">
+                              <span class="icon is-small">
+                                <i class="fas fa-reply" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                            <a class="level-item" aria-label="retweet">
+                              <span class="icon is-small">
+                                <i class="fas fa-retweet" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                            <a class="level-item" aria-label="like">
+                              <span class="icon is-small">
+                                <i class="fas fa-heart" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </nav>
+                      </div>
+                    </article>
+                  </div>
+            </div>
+        </div>
+
+    
+        <div id="acesso2">
+            <div class="columns is-mobile" >
+                <div class="column is-half is-offset-one-quarter">
+                    <form class="box" id="acesso">
+                        <div class="field">
+                            <label class="label">Usuário</label>
+                            <div class="control">
+                              <input class="input" type="text"  id="usuario">
+                            </div>
+                          </div>
+                        
+                          <div class="field">
+                            <label class="label">Senha</label>
+                            <div class="control">
+                              <input class="input" type="password" placeholder="********" id="senha">
+                            </div>
+                        </div>
+
+                        <input class="button is-primary" type="button" onclick="esconderacesso()" value="Acessar">
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="esconder" id="tabela">
+            <div class="columns is-mobile">
+                <div class="column is-6 is-offset-3">
+                    <div class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth" id="avaliacoes">
+                        <table class="table">
+                            <thead>
+                                <tr class="text-center">
+                                    <th>AVALIAÇÃO</th>
+                                    <th>COMENTÁRIO</th> 
+                                </tr>
+                            </thead>
+                            <tbody id="grid">
+            
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </body>
+</html>
+
